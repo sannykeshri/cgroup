@@ -1,0 +1,6 @@
+---
+- hosts: localhost
+  tasks:
+    - name: debug message to system
+      debug:
+         msg: "this is test playbook for displaying the message"
