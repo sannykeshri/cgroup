@@ -1,0 +1,7 @@
+---
+- hosts: localhost
+  become: true
+  tasks:
+    - name: this is cgroup task
+      raw: cgcreate -a sanny:sanny -t sanny:sanny -g cpuacct,memory,pids:profile1
+
